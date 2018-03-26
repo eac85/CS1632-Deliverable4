@@ -24,5 +24,37 @@
 <tr><td>assertText</td><td>//h2<datalist><option>//h2</option><option>css=h2</option></datalist></td><td>Fibonacci of 5 is 8!</td>
 </tr>
 </tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">FIBONACCI-UPPER-BOUND-VALUE-TEST</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://cs1632ex.herokuapp.com/fibres/?value=1<datalist><option>https://cs1632ex.herokuapp.com/fibres/?value=1</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Fibonacci<datalist><option>link=Fibonacci</option><option>//a[contains(text(),'Fibonacci')]</option><option>//a[contains(@href, '/fib')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=tb1<datalist><option>id=tb1</option><option>name=value</option><option>//input[@id='tb1']</option><option>//input</option><option>css=#tb1</option></datalist></td><td>100</td>
+</tr>
+<tr><td>click</td><td>id=sub<datalist><option>id=sub</option><option>//input[@id='sub']</option><option>//input[2]</option><option>css=#sub</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//h2<datalist><option>//h2</option><option>css=h2</option></datalist></td><td>Fibonacci of 100 is 1!</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">FIBONACCI-LOWER-BOUND-VALUE-TEST</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://cs1632ex.herokuapp.com/fib<datalist><option>https://cs1632ex.herokuapp.com/factres/?value=100</option><option>https://cs1632ex.herokuapp.com/fib</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Fibonacci<datalist><option>link=Fibonacci</option><option>//a[contains(text(),'Fibonacci')]</option><option>//a[contains(@href, '/fib')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=tb1<datalist><option>id=tb1</option><option>name=value</option><option>//input[@id='tb1']</option><option>//input</option><option>css=#tb1</option></datalist></td><td>1</td>
+</tr>
+<tr><td>click</td><td>id=sub<datalist><option>id=sub</option><option>//input[@id='sub']</option><option>//input[2]</option><option>css=#sub</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//h2<datalist><option>//h2</option><option>css=h2</option></datalist></td><td>Fibonacci of 1 is 1!</td>
+</tr>
+</tbody></table>
 </body>
 </html>
