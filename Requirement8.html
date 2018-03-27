@@ -8,16 +8,32 @@
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">CATHY-THREE-IMAGES</td></tr>
+<tr><td rowspan="1" colspan="3">CATHEDRAL-PIC-1-TEST</td></tr>
 </thead>
 <tbody>
 <tr><td>open</td><td>https://cs1632ex.herokuapp.com/cathy<datalist><option>https://cs1632ex.herokuapp.com/cathy</option></datalist></td><td></td>
 </tr>
-<tr><td>click</td><td>//ol/li<datalist><option>//ol/li</option><option>css=ol &gt; li</option></datalist></td><td></td>
+<tr><td>assertElementPresent</td><td>//img[@alt='Sunny Cathedral']<datalist><option>//img[@alt='Sunny Cathedral']</option><option>//img</option><option>css=img[alt="Sunny Cathedral"]</option></datalist></td><td></td>
 </tr>
-<tr><td>assertText</td><td>//ol/li[2]<datalist><option>//ol/li[2]</option></datalist></td><td>" "</td>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CATHEDRAL-PIC-2-TEST</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://cs1632ex.herokuapp.com/cathy<datalist><option>https://cs1632ex.herokuapp.com/cathy</option></datalist></td><td></td>
 </tr>
-<tr><td>click</td><td>//ol/li[3]<datalist><option>//ol/li[3]</option></datalist></td><td></td>
+<tr><td>assertElementPresent</td><td>//img[@alt='Alpenglow Cathedral']<datalist><option>//img[@alt='Alpenglow Cathedral']</option><option>//li[2]/img</option><option>css=img[alt="Alpenglow Cathedral"]</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CATHEDRAL-PIC-3-TEST</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://cs1632ex.herokuapp.com/cathy<datalist><option>https://cs1632ex.herokuapp.com/cathy</option></datalist></td><td></td>
+</tr>
+<tr><td>assertElementPresent</td><td>//img[@alt='Old Cathedral']<datalist><option>//img[@alt='Old Cathedral']</option><option>//li[3]/img</option><option>css=img[alt="Old Cathedral"]</option></datalist></td><td></td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">

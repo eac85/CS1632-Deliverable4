@@ -16,5 +16,17 @@
 <tr><td>assertText</td><td>//h2<datalist><option>//h2</option><option>css=h2</option></datalist></td><td>Hello CS1632, from jazzy!</td>
 </tr>
 </tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">HELLO-TRAILING-WITH-SPACE-TEST</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://cs1632ex.herokuapp.com/hello/<datalist><option>https://cs1632ex.herokuapp.com/hello/%22%20%22</option><option>https://cs1632ex.herokuapp.com/hello/</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>https://cs1632ex.herokuapp.com/hello/"%20"<datalist><option>https://cs1632ex.herokuapp.com/hello/" "</option><option>https://cs1632ex.herokuapp.com/hello/"%20"</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//h2<datalist><option>//h2</option><option>css=h2</option></datalist></td><td>Hello CS1632, from " "!</td>
+</tr>
+</tbody></table>
 </body>
 </html>
